@@ -118,6 +118,7 @@ public class PullLayout extends ScrollView {
 
         switch (ev.getAction()) {
             case MotionEvent.ACTION_MOVE:
+                isTouchOrRunning = true;
                 if (getScrollY() != 0) {
                     detalY = 0;
                     lastY = ev.getY();
